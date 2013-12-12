@@ -1,0 +1,272 @@
+/**
+ * Base
+ */
+.root {
+  -fx-background-color: #ffffff;
+}
+
+/**
+ * Base
+ */
+
+.hbox,
+.vbox,
+.pane,
+.scroll-pane {
+  -fx-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -fx-font-size: 14px;
+  -fx-background-color: transparent;
+}
+
+.accordion,
+.button,
+.cell,
+.check-box,
+.choice-box,
+.color-picker,
+.combo-box,
+.label,
+.list-cell,
+.text-area,
+.text-field {
+  -fx-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -fx-font-size: 14px;
+  -fx-text-fill: #333333;
+}
+
+/**
+ * Controls
+ */
+.hyperlink {
+  -fx-text-fill: #428bca;
+}
+.hyperlink:hover,
+.hyperlink:focused {
+  -fx-text-fill: #2a6496;
+  -fx-underline: true;
+}
+
+.button {
+  -fx-border-radius: 4px;
+  -fx-background-radius: 4px;
+  -fx-padding: 6px 12px 6px 12px;
+}
+
+/**
+ * Style
+ */
+.small {
+  -fx-font-size: 85%;
+}
+.code, .kbd, .pre, .samp {
+  -fx-font-family: monospace, serif;
+  -fx-font-size: 14px; /* 1em; There are bugs on focus. size of 'em' copied and over wrote from other control.  */
+}
+.text-muted {
+  -fx-text-fill: #999999;
+}
+.text-primary {
+  -fx-text-fill: #428bca;
+}
+.text-primary:hover {
+  -fx-text-fill: #3071a9;
+}
+.text-warning {
+  -fx-text-fill: #c09853;
+}
+.text-warning:hover {
+  -fx-text-fill: #a47e3c;
+}
+.text-danger {
+  -fx-text-fill: #b94a48;
+}
+.text-danger:hover {
+  -fx-text-fill: #953b39;
+}
+.text-success {
+  -fx-text-fill: #468847;
+}
+.text-success:hover {
+  -fx-text-fill: #356635;
+}
+.text-info {
+  -fx-text-fill: #3a87ad;
+}
+.text-info:hover {
+  -fx-text-fill: #2d6987;
+}
+.text-left {
+  -fx-text-alignment: left;
+}
+.text-center {
+  -fx-text-alignment: center;
+}
+.text-right {
+  -fx-text-alignment: right;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  -fx-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -fx-font-weight: 500;
+}
+.h1,
+.h2,
+.h3 {
+  -fx-padding: 20px 0 10px 0;
+}
+.h4,
+.h5,
+.h6 {
+  -fx-padding: 10px 0 10px 0;
+}
+.h1 {
+  -fx-font-size: 36px;
+}
+.h2 {
+  -fx-font-size: 30px;
+}
+.h3 {
+  -fx-font-size: 24px;
+}
+.h4 {
+  -fx-font-size: 18px;
+}
+.h5 {
+  -fx-font-size: 14px;
+}
+.h6 {
+  -fx-font-size: 12px;
+}
+
+.page-header {
+  -fx-padding: 40px 0 29px 0;
+}
+
+.container {
+  -fx-padding: 0 15px 0 15px;
+}
+
+.alert {
+  /* margin-bottom: 20px; Cannot found way to configure margins via css */
+  -fx-padding: 15px;
+  -fx-gap-start-and-end: true;
+  -fx-border-style: solid;
+  -fx-border-width: 1px;
+  -fx-border-radius: 4px;
+}
+
+.alert-success {
+  -fx-background-color: #dff0d8;
+  -fx-border-color: #d6e9c6;
+  -fx-text-fill: #468847;
+}
+.alert-info {
+  -fx-background-color: #d9edf7;
+  -fx-border-color: #bce8f1;
+  -fx-text-fill: #3a87ad;
+}
+.alert-warning {
+  -fx-background-color: #fcf8e3;
+  -fx-border-color: #faebcc;
+  -fx-text-fill: #c09853;
+}
+.alert-danger {
+  -fx-background-color: #f2dede;
+  -fx-border-color: #ebccd1;
+  -fx-text-fill: #b94a48;
+}
+
+.btn-default {
+  -fx-text-fill: #333333;
+  -fx-background-color: #ffffff;
+  -fx-border-color: #cccccc;
+}
+.btn-default:hover {
+  -fx-text-fill: #333333;
+  -fx-background-color: #ebebeb;
+  -fx-border-color: #adadad;
+}
+.btn-default:disabled {
+  -fx-background-color: #ffffff;
+  -fx-border-color: #cccccc;
+}
+
+.btn-primary {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #428bca;
+  -fx-border-color: #357ebd;
+}
+.btn-primary:hover {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #3276b1;
+  -fx-border-color: #285e8e;
+}
+.btn-primary:disabled {
+  -fx-background-color: #428bca;
+  -fx-border-color: #357ebd;
+}
+
+.btn-warning {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #f0ad4e;
+  -fx-border-color: #eea236;
+}
+.btn-warning:hover {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #ed9c28;
+  -fx-border-color: #d58512;
+}
+.btn-warning:disabled {
+  -fx-background-color: #f0ad4e;
+  -fx-border-color: #eea236;
+}
+
+.btn-danger {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #d9534f;
+  -fx-border-color: #d43f3a;
+}
+.btn-danger:hover {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #d2322d;
+  -fx-border-color: #ac2925;
+}
+.btn-danger:disabled {
+  -fx-background-color: #d9534f;
+  -fx-border-color: #d43f3a;
+}
+
+.btn-success {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #5cb85c;
+  -fx-border-color: #4cae4c;
+}
+.btn-success:hover {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #47a447;
+  -fx-border-color: #398439;
+}
+.btn-success:disabled {
+  -fx-background-color: #5cb85c;
+  -fx-border-color: #4cae4c;
+}
+
+.btn-info {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #5bc0de;
+  -fx-border-color: #46b8da;
+}
+.btn-info:hover {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #39b3d7;
+  -fx-border-color: #269abc;
+}
+.btn-info:disabled {
+  -fx-background-color: #5bc0de;
+  -fx-border-color: #46b8da;
+}
